@@ -3,6 +3,7 @@ import Header from "../Components/Header";
 import HeroSection from "../Components/HeroSection";
 import CompanySection from "../Components/CompanySection";
 import { Outlet } from "react-router";
+import Footer from "../Components/Footer";
 
 // Example JSON for companies
 const companies = [
@@ -92,30 +93,8 @@ const HomePage = () => {
                 </div>
             </section>
 
-            {/* 5️⃣ Why Choose Us Section */}
-            <section className="py-20">
-                <div className="container mx-auto text-center">
-                    <h2 className="text-3xl font-bold mb-10">Why Choose Us</h2>
-                    <div className="grid md:grid-cols-4 gap-8">
-                        <div className="bg-white shadow-md p-6 rounded-lg">
-                            <h3 className="font-semibold mb-2">Verified Companies</h3>
-                            <p>Only trusted companies listed.</p>
-                        </div>
-                        <div className="bg-white shadow-md p-6 rounded-lg">
-                            <h3 className="font-semibold mb-2">Easy Tracking</h3>
-                            <p>Keep track of your job applications.</p>
-                        </div>
-                        <div className="bg-white shadow-md p-6 rounded-lg">
-                            <h3 className="font-semibold mb-2">Updated Listings</h3>
-                            <p>Jobs updated regularly.</p>
-                        </div>
-                        <div className="bg-white shadow-md p-6 rounded-lg">
-                            <h3 className="font-semibold mb-2">User Friendly</h3>
-                            <p>Clean, intuitive interface for all users.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            {/* footer*/}
+            <Footer></Footer>
 
         </div>
     );

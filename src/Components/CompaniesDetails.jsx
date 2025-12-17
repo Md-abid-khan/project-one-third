@@ -2,6 +2,7 @@ import React, { use, useEffect, useState } from 'react';
 import { useLoaderData, useParams } from 'react-router';
 import Jobs from './Jobs';
 import Header from './Header';
+import Footer from './Footer';
 
 
 // const fetchCompanyData = fetch("/companyDetails.json")
@@ -35,6 +36,7 @@ const CompaniesDetails = () => {
                     selectedCompany.jobs.map(job => <Jobs key={job.id} job={job}></Jobs>)
                 }
             </div>
+            <Footer></Footer>
 
         </div>
     );

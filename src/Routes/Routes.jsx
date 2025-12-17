@@ -5,6 +5,7 @@ import Loading from "daisyui/components/loading";
 import Profile from "../Components/Profile";
 import Login from "../Layouts/Login";
 import Register from "../Layouts/Register";
+import PrivateRoutes from "./PrivateRoutes";
 
 export const router = createBrowserRouter([
   {
@@ -15,13 +16,13 @@ export const router = createBrowserRouter([
   },
   {
     path: "/companyDetails/:id",
-    Component: CompaniesDetails,
+    element: <PrivateRoutes><CompaniesDetails></CompaniesDetails></PrivateRoutes>,
     loader: () => fetch("/companyDetails.json"),
     hydrateFallbackElement: <Loading></Loading>
   },
   {
     path: "/profile",
-    Component: Profile,
+    element: <PrivateRoutes><Profile></Profile></PrivateRoutes>,
   },
   {
     path: "/login",
