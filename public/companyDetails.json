@@ -1,0 +1,317 @@
+[
+    {
+        "id": "company-001",
+        "name": "TechNova Solutions",
+        "logo": "https://i.ibb.co.com/SXzLCMZM/download.png",
+        "location": "Dhaka, Bangladesh",
+        "website": "https://technova.com",
+        "industry": "Software Development",
+        "jobs": [
+            {
+                "id": "job-001",
+                "title": "Frontend Developer",
+                "bannerImage": "https://i.ibb.co.com/sp5xRXWf/download-10.jpg",
+                "location": "Remote",
+                "salary": "$800 - $1200",
+                "jobType": "Full-time",
+                "description": "Build modern and responsive user interfaces.",
+                "requirements": [
+                    "HTML, CSS, JavaScript",
+                    "React.js",
+                    "REST APIs",
+                    "Responsive design"
+                ]
+            },
+            {
+                "id": "job-002",
+                "title": "Backend Developer",
+                "bannerImage": "https://i.ibb.co.com/0R0Jfpt3/download-1.jpg",
+                "location": "Dhaka",
+                "salary": "$1000 - $1500",
+                "jobType": "Full-time",
+                "description": "Develop scalable backend systems.",
+                "requirements": [
+                    "Node.js",
+                    "Express.js",
+                    "MongoDB",
+                    "API development"
+                ]
+            },
+            {
+                "id": "job-003",
+                "title": "UI/UX Designer",
+                "bannerImage": "https://i.ibb.co.com/cXhGKdFX/download-2.jpg",
+                "location": "Remote",
+                "salary": "$700 - $1000",
+                "jobType": "Full-time",
+                "description": "Design intuitive user experiences.",
+                "requirements": [
+                    "Figma or Adobe XD",
+                    "User research",
+                    "Wireframing"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "company-002",
+        "name": "Cloudify Ltd",
+        "logo": "https://i.ibb.co.com/Zz8q2n6D/download-3.jpg",
+        "location": "Chattogram, Bangladesh",
+        "website": "https://cloudify.io",
+        "industry": "Cloud & DevOps",
+        "jobs": [
+            {
+                "id": "job-004",
+                "title": "DevOps Engineer",
+                "bannerImage": "https://i.ibb.co.com/F2R135y/download-4.jpg",
+                "location": "Remote",
+                "salary": "$1200 - $1800",
+                "jobType": "Full-time",
+                "description": "Manage cloud infrastructure and pipelines.",
+                "requirements": [
+                    "AWS",
+                    "Docker",
+                    "Kubernetes",
+                    "CI/CD"
+                ]
+            },
+            {
+                "id": "job-005",
+                "title": "Cloud Support Engineer",
+                "bannerImage": "https://i.ibb.co.com/PvFsPgVH/download-5.jpg",
+                "location": "Chattogram",
+                "salary": "$700 - $1000",
+                "jobType": "Full-time",
+                "description": "Provide cloud platform support.",
+                "requirements": [
+                    "Networking basics",
+                    "Linux",
+                    "Troubleshooting"
+                ]
+            },
+            {
+                "id": "job-006",
+                "title": "Site Reliability Engineer",
+                "bannerImage": "https://i.ibb.co.com/pBVGcJbV/download-1.png",
+                "location": "Remote",
+                "salary": "$1400 - $1900",
+                "jobType": "Full-time",
+                "description": "Ensure system reliability and uptime.",
+                "requirements": [
+                    "Monitoring tools",
+                    "Automation",
+                    "Incident response"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "company-003",
+        "name": "FinEdge Corp",
+        "logo": "https://i.ibb.co.com/pBDz7fMk/download-6.jpg",
+        "location": "Sylhet, Bangladesh",
+        "website": "https://finedge.com",
+        "industry": "FinTech",
+        "jobs": [
+            {
+                "id": "job-007",
+                "title": "Backend Developer",
+                "bannerImage": "https://i.ibb.co.com/0R0Jfpt3/download-1.jpg",
+                "location": "Remote",
+                "salary": "$1000 - $1500",
+                "jobType": "Full-time",
+                "description": "Develop secure financial APIs.",
+                "requirements": [
+                    "Node.js or Django",
+                    "PostgreSQL",
+                    "Security practices"
+                ]
+            },
+            {
+                "id": "job-008",
+                "title": "QA Engineer",
+                "bannerImage": "https://i.ibb.co.com/C5prMQbH/download-2.png",
+                "location": "Sylhet",
+                "salary": "$600 - $900",
+                "jobType": "Full-time",
+                "description": "Test fintech applications.",
+                "requirements": [
+                    "Manual testing",
+                    "Test cases",
+                    "Bug tracking"
+                ]
+            },
+            {
+                "id": "job-009",
+                "title": "Data Analyst",
+                "bannerImage": "https://i.ibb.co.com/VYQ5q1jk/download-3.png",
+                "location": "Remote",
+                "salary": "$900 - $1300",
+                "jobType": "Full-time",
+                "description": "Analyze financial data trends.",
+                "requirements": [
+                    "SQL",
+                    "Excel",
+                    "Data visualization"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "company-004",
+        "name": "HealthSoft",
+        "logo": "https://i.ibb.co.com/3yZvbd44/download-7.jpg",
+        "location": "Dhaka, Bangladesh",
+        "website": "https://healthsoft.io",
+        "industry": "HealthTech",
+        "jobs": [
+            {
+                "id": "job-010",
+                "title": "React Developer",
+                "bannerImage": "https://i.ibb.co.com/SDrq4x6Q/download-4.png",
+                "location": "Remote",
+                "salary": "$900 - $1300",
+                "jobType": "Full-time",
+                "description": "Build healthcare dashboards.",
+                "requirements": [
+                    "React.js",
+                    "Hooks",
+                    "API integration"
+                ]
+            },
+            {
+                "id": "job-011",
+                "title": "Product Manager",
+                "bannerImage": "https://i.ibb.co.com/3YNFpT6B/download-5.png",
+                "location": "Dhaka",
+                "salary": "$1100 - $1600",
+                "jobType": "Full-time",
+                "description": "Manage healthcare products.",
+                "requirements": [
+                    "Agile",
+                    "Stakeholder management",
+                    "Roadmapping"
+                ]
+            },
+            {
+                "id": "job-012",
+                "title": "Technical Support Engineer",
+                "bannerImage": "https://i.ibb.co.com/xK2tDcH2/download-8.jpg",
+                "location": "Dhaka",
+                "salary": "$600 - $900",
+                "jobType": "Full-time",
+                "description": "Support hospital software users.",
+                "requirements": [
+                    "Customer support",
+                    "Basic IT knowledge",
+                    "Communication skills"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "company-005",
+        "name": "EduSpark",
+        "logo": "https://i.ibb.co.com/20sphHMm/download-9.jpg",
+        "location": "Rajshahi, Bangladesh",
+        "website": "https://eduspark.edu",
+        "industry": "EdTech",
+        "jobs": [
+            {
+                "id": "job-013",
+                "title": "Content Developer",
+                "bannerImage": "https://i.ibb.co.com/3YNFpT6B/download-5.png",
+                "location": "Remote",
+                "salary": "$400 - $700",
+                "jobType": "Part-time",
+                "description": "Create learning materials.",
+                "requirements": [
+                    "Writing skills",
+                    "Research",
+                    "Subject knowledge"
+                ]
+            },
+            {
+                "id": "job-014",
+                "title": "Frontend Intern",
+                "bannerImage": "https://i.ibb.co.com/sp5xRXWf/download-10.jpg",
+                "location": "Rajshahi",
+                "salary": "$200 - $300",
+                "jobType": "Internship",
+                "description": "Assist frontend development.",
+                "requirements": [
+                    "HTML",
+                    "CSS",
+                    "JavaScript basics"
+                ]
+            },
+            {
+                "id": "job-015",
+                "title": "Online Instructor",
+                "bannerImage": "https://i.ibb.co.com/ns1JKyCJ/download-11.jpg",
+                "location": "Remote",
+                "salary": "$500 - $900",
+                "jobType": "Contract",
+                "description": "Teach online courses.",
+                "requirements": [
+                    "Teaching experience",
+                    "Presentation skills",
+                    "Subject expertise"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "company-006",
+        "name": "Marketify",
+        "logo": "https://i.ibb.co.com/N4337Bb/download-12.jpg",
+        "location": "Khulna, Bangladesh",
+        "website": "https://marketify.com",
+        "industry": "Digital Marketing",
+        "jobs": [
+            {
+                "id": "job-016",
+                "title": "Digital Marketing Executive",
+                "bannerImage": "https://i.ibb.co.com/zWvZrLGC/download-6.png",
+                "location": "Khulna",
+                "salary": "$500 - $800",
+                "jobType": "Full-time",
+                "description": "Run digital campaigns.",
+                "requirements": [
+                    "SEO basics",
+                    "Social media",
+                    "Analytics tools"
+                ]
+            },
+            {
+                "id": "job-017",
+                "title": "SEO Specialist",
+                "bannerImage": "https://i.ibb.co.com/Z6yCkq3M/download-13.jpg",
+                "location": "Remote",
+                "salary": "$700 - $1100",
+                "jobType": "Full-time",
+                "description": "Optimize website rankings.",
+                "requirements": [
+                    "Keyword research",
+                    "On-page SEO",
+                    "Google Analytics"
+                ]
+            },
+            {
+                "id": "job-018",
+                "title": "Content Marketer",
+                "bannerImage": "https://i.ibb.co.com/v40Nb64J/download-7.png",
+                "location": "Remote",
+                "salary": "$600 - $900",
+                "jobType": "Full-time",
+                "description": "Create marketing content.",
+                "requirements": [
+                    "Copywriting",
+                    "Content strategy",
+                    "Brand voice"
+                ]
+            }
+        ]
+    }
+]
