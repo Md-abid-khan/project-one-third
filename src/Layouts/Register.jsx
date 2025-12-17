@@ -1,10 +1,13 @@
-import React, { use } from 'react';
+import React, { use, useState } from 'react';
 import Header from '../Components/Header';
-import { Link } from 'react-router';
+import { Link, useLocation, useNavigate } from 'react-router';
 import { AuthContext } from '../Auth/AuthProvider';
 
 const Register = () => {
     const { createUser } = use(AuthContext);
+    const navigate = useNavigate();
+    const location = useLocation();
+    const [errorPassword, setErrorPassword] = useState('');
 
     const handleCreateUser = (e) => {
         e.preventDefault();
@@ -13,12 +16,30 @@ const Register = () => {
         const photo = form.photoURL.value;
         const email = form.email.value;
         const password = form.password.value;
+
+        if (password.length < 6) {
+            setErrorPassword('Password has to be at least 6 letters')
+        }
+        else if (!/[A-Z]/.test(password)) {
+            setErrorPassword('Password has to include One Capital Letter')
+
+        }
+        else if (!/[a-z]/.test(password)) {
+            setErrorPassword('Password has to include One Small Letter')
+        }
+        else { 
+                <p style={{ color: "green" }}>Password looks good ✅</p>
+        }
+
+
         console.log(name, photo, email, password);
 
         createUser(email, password)
             .then(result => {
                 const user = result.user;
                 console.log(user);
+                // navigate(`{}`)
+                navigate(`${location.state ? location.state : "/"}`)
             })
             .catch(error => {
                 console.log(error);
@@ -39,7 +60,10 @@ const Register = () => {
                         <input name='email' type="email" className="input" placeholder="Email" />
                         <label className="label">Password</label>
                         <input name='password' type="password" className="input" placeholder="Password" />
-                        <button type='submit' className="btn btn-neutral mt-4">Register</button>
+                        {
+                            errorPassword && <small className='text-red-500'>{errorPassword}</small>
+                        }
+                        <Link to={`${location.state ? location.state : "/register"}`} type='submit' className="btn btn-neutral mt-4">Register</Link>
                     </form>
                     <p>Want to Login? Click <Link to={"/login"} className='text-red-600'>Login</Link></p>
                 </div>

@@ -2,24 +2,11 @@ import React from "react";
 import Header from "../Components/Header";
 import HeroSection from "../Components/HeroSection";
 import CompanySection from "../Components/CompanySection";
-import { Outlet } from "react-router";
+// import { Outlet } from "react-router";
 import Footer from "../Components/Footer";
 
 // Example JSON for companies
-const companies = [
-    { id: 1, name: "Google", logo: "/logos/google.png" },
-    { id: 2, name: "Amazon", logo: "/logos/amazon.png" },
-    { id: 3, name: "Microsoft", logo: "/logos/microsoft.png" },
-    { id: 4, name: "Facebook", logo: "/logos/facebook.png" },
-    { id: 5, name: "Apple", logo: "/logos/apple.png" },
-];
 
-const featuredJobs = [
-    { id: 1, title: "Frontend Developer", company: "Google", location: "Remote" },
-    { id: 2, title: "Backend Developer", company: "Amazon", location: "Seattle" },
-    { id: 3, title: "UI/UX Designer", company: "Microsoft", location: "NYC" },
-    { id: 4, title: "Fullstack Developer", company: "Facebook", location: "Remote" },
-];
 
 const HomePage = () => {
     return (
@@ -71,11 +58,14 @@ const HomePage = () => {
                     </div>
                 </div>
             </section> */}
+            <div className="py-10">
+
             <CompanySection></CompanySection>
-            <Outlet></Outlet>
+            </div>
+            {/* <Outlet></Outlet> */}
 
             {/* 4️⃣ Featured Jobs Section */}
-            <section className="py-20 bg-gray-50">
+            {/* <section className="py-20 bg-gray-50">
                 <div className="container mx-auto text-center">
                     <h2 className="text-3xl font-bold mb-10">Featured Jobs</h2>
                     <div className="grid md:grid-cols-4 gap-8">
@@ -91,7 +81,7 @@ const HomePage = () => {
                         ))}
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             {/* footer*/}
             <Footer></Footer>

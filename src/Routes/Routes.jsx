@@ -6,6 +6,7 @@ import Profile from "../Components/Profile";
 import Login from "../Layouts/Login";
 import Register from "../Layouts/Register";
 import PrivateRoutes from "./PrivateRoutes";
+import Error from "../Components/Error";
 
 export const router = createBrowserRouter([
   {
@@ -31,5 +32,9 @@ export const router = createBrowserRouter([
   {
     path: "/register",
     Component: Register
+  },
+  {
+    path:"/*",
+    Component: Error
   }
 ]);
