@@ -2,21 +2,19 @@ import React from "react";
 import Header from "../Components/Header";
 import HeroSection from "../Components/HeroSection";
 import CompanySection from "../Components/CompanySection";
-// import { Outlet } from "react-router";
 import Footer from "../Components/Footer";
-
-// Example JSON for companies
 
 
 const HomePage = () => {
+
     return (
         <div className="font-inter text-gray-800">
             <Header></Header>
 
-            {/* 1️⃣ Hero Section */}
+          
             <HeroSection></HeroSection>
 
-            {/* 2️⃣ How It Works Section */}
+           
             <section className="py-20 bg-gray-50">
                 <div className="container mx-auto text-center">
                     <h2 className="text-3xl font-bold mb-10">How It Works</h2>
@@ -41,49 +39,10 @@ const HomePage = () => {
                 </div>
             </section>
 
-            {/* 3️⃣ Companies Section */}
-            {/* <section className="py-20">
-                <div className="container mx-auto text-center">
-                    <h2 className="text-3xl font-bold mb-10">Our Companies</h2>
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
-                        {companies.map((company) => (
-                            <a
-                                key={company.id}
-                                href={`/company/${company.id}`}
-                                className="p-4 bg-white shadow-md rounded-lg flex justify-center items-center hover:scale-105 transition-transform"
-                            >
-                                <img src={company.logo} alt={company.name} className="h-16" />
-                            </a>
-                        ))}
-                    </div>
-                </div>
-            </section> */}
             <div className="py-10">
-
-            <CompanySection></CompanySection>
+                <CompanySection></CompanySection>
             </div>
-            {/* <Outlet></Outlet> */}
 
-            {/* 4️⃣ Featured Jobs Section */}
-            {/* <section className="py-20 bg-gray-50">
-                <div className="container mx-auto text-center">
-                    <h2 className="text-3xl font-bold mb-10">Featured Jobs</h2>
-                    <div className="grid md:grid-cols-4 gap-8">
-                        {featuredJobs.map((job) => (
-                            <div key={job.id} className="bg-white shadow-md p-6 rounded-lg">
-                                <h3 className="font-semibold mb-2">{job.title}</h3>
-                                <p className="text-sm mb-1">{job.company}</p>
-                                <p className="text-sm text-gray-500 mb-3">{job.location}</p>
-                                <button className="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700">
-                                    Apply
-                                </button>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section> */}
-
-            {/* footer*/}
             <Footer></Footer>
 
         </div>

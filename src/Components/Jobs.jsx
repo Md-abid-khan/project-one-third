@@ -10,17 +10,15 @@ const Jobs = ({ job }) => {
             <div className='flex flex-col my-10'>
                 <div className='flex justify-around items-center py-5 '>
                     <div className='space-y-2'>
-
                         <h1 className='font-bold text-3xl'>{job.title}</h1>
                         <h1 className='font-semibold'>{job.salary}</h1>
                         <h1 className='text-3xl'>{job.jobType}</h1>
-                        {/* <h1 className='text-green-500'>{job.location}</h1> */}
                     </div>
                     <img className='h-40 w-40' src={job.bannerImage} alt="" />
                 </div>
                 <button className='btn w-8/12 mx-auto mt-3' onClick={() => document.getElementById(`my_modal_1-${job.id}`).showModal()}>Show Details</button>
             </div>
-            {/* <button className="btn" onClick={() => document.getElementById('my_modal_1').showModal()}>open modal</button> */}
+          
             <dialog id={`my_modal_1-${job.id}`} className="modal">
                 <div className="modal-box">
                     <div className='flex justify-between items-center'>
@@ -36,7 +34,6 @@ const Jobs = ({ job }) => {
                     <div className="modal-action flex justify-between">
                         <NavLink  className='btn'>Apply</NavLink>
                         <form method="dialog" >
-                            {/* if there is a button in form, it will close the modal */}
                             <button className="btn">Close</button>
                         </form>
                     </div>

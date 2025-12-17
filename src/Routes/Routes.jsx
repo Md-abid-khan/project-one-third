@@ -11,9 +11,7 @@ import Error from "../Components/Error";
 export const router = createBrowserRouter([
   {
     path: "/",
-    Component: HomePage,
-    children: [
-    ]
+    Component: HomePage
   },
   {
     path: "/companyDetails/:id",

@@ -22,13 +22,12 @@ const Register = () => {
         }
         else if (!/[A-Z]/.test(password)) {
             setErrorPassword('Password has to include One Capital Letter')
-
         }
         else if (!/[a-z]/.test(password)) {
             setErrorPassword('Password has to include One Small Letter')
         }
-        else { 
-                <p style={{ color: "green" }}>Password looks good ✅</p>
+        else {
+            <p style={{ color: "green" }}>Password looks good ✅</p>
         }
 
 
@@ -63,7 +62,9 @@ const Register = () => {
                         {
                             errorPassword && <small className='text-red-500'>{errorPassword}</small>
                         }
-                        <Link to={`${location.state ? location.state : "/register"}`} type='submit' className="btn btn-neutral mt-4">Register</Link>
+                        <button
+                        //  to={`${location.state ? location.state : "/register"}`} 
+                         type='submit' className="btn btn-neutral mt-4">Register</button>
                     </form>
                     <p>Want to Login? Click <Link to={"/login"} className='text-red-600'>Login</Link></p>
                 </div>
