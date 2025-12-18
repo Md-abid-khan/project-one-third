@@ -2,6 +2,7 @@ import React, { use, useState } from 'react';
 import Header from '../Components/Header';
 import { Link, useLocation, useNavigate } from 'react-router';
 import { AuthContext } from '../Auth/AuthProvider';
+import { Helmet } from 'react-helmet';
 
 const Register = () => {
     const { createUser } = use(AuthContext);
@@ -19,12 +20,15 @@ const Register = () => {
 
         if (password.length < 6) {
             setErrorPassword('Password has to be at least 6 letters')
+            return;
         }
         else if (!/[A-Z]/.test(password)) {
             setErrorPassword('Password has to include One Capital Letter')
+            return;
         }
         else if (!/[a-z]/.test(password)) {
             setErrorPassword('Password has to include One Small Letter')
+            return;
         }
         else {
             <p style={{ color: "green" }}>Password looks good ✅</p>
@@ -47,6 +51,9 @@ const Register = () => {
     return (
         <div>
             <Header></Header>
+            <Helmet>
+                <title>Register</title>
+            </Helmet>
             <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl mx-auto mt-15">
                 <h1 className='text-2xl font-extrabold text-center mt-5'>Create an Account...</h1>
                 <div className="card-body">

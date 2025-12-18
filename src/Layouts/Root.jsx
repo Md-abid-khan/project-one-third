@@ -3,12 +3,16 @@ import Header from "../Components/Header";
 import HeroSection from "../Components/HeroSection";
 import CompanySection from "../Components/CompanySection";
 import Footer from "../Components/Footer";
+import { Helmet } from "react-helmet";
 
 
 const HomePage = () => {
 
     return (
         <div className="font-inter text-gray-800">
+            <Helmet>
+                <title>Company Intro | Home</title>
+            </Helmet>
             <Header></Header>
 
           

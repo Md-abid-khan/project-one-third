@@ -3,6 +3,7 @@ import Header from '../Components/Header';
 import { Link, useLocation, useNavigate, } from 'react-router';
 import { AuthContext } from '../Auth/AuthProvider';
 import { toast } from 'react-toastify';
+import { Helmet } from 'react-helmet';
 
 const Login = () => {
     const { loginUser, googleLogin, forgetUserPassword } = use(AuthContext);
@@ -64,6 +65,9 @@ const Login = () => {
     return (
         <div>
             <Header></Header>
+            <Helmet>
+                <title>Login</title>
+            </Helmet>
             <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl mx-auto mt-30">
                 <h1 className='text-2xl font-extrabold text-center mt-5'>Login</h1>
                 <div className="card-body">

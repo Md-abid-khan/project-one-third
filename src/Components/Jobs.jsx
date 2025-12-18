@@ -27,7 +27,7 @@ const Jobs = ({ job }) => {
                             <h1 className="py-4"> Salary: {job.salary}</h1>
                             <h1>{job.jobType}</h1>
                             <h1>{job.location}</h1>
-                            <h1 className='text-blue-700'> <span className='text-black font-semibold text-lg'>Requirements:</span>  {job.requirements.map(requirement => <Requirement requirement={requirement}></Requirement>)}</h1>
+                            <h1 className='text-blue-700'> <span className='text-black font-semibold text-lg'>Requirements: <br /> </span>  {job.requirements.map(requirement => <Requirement requirement={requirement}></Requirement>)}</h1>
                         </div>
                         <img src={job.bannerImage} alt="" />
                     </div>

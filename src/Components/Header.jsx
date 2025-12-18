@@ -28,7 +28,7 @@ const Header = () => {
                 {
                     user ? <>
                     <NavLink onClick={signOut}>LogOut</NavLink>
-                    <NavLink to={"/profile"}><img className='h-10 rounded-full' src={profilePic} alt="" /></NavLink>
+                    <NavLink to={"/profile"}><img className='h-10 rounded-full' src={user.photoURL ? user.photoURL : profilePic } alt="" /></NavLink>
                     </>:
                     <>
                     <NavLink to={"/login"}>Login</NavLink>
