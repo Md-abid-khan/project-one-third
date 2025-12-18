@@ -1,4 +1,4 @@
-import React, { use, useEffect, useState } from 'react';
+import React  from 'react';
 import { useLoaderData, useParams } from 'react-router';
 import Jobs from './Jobs';
 import Header from './Header';
@@ -33,7 +33,7 @@ const CompaniesDetails = () => {
             <h1 className='py-5 font-bold text-2xl text-center'>Available Jobs</h1>
             <div>
                 {
-                    selectedCompany.jobs.map(job => <Jobs key={job.id} job={job}></Jobs>)
+                    selectedCompany.jobs.map(job => <Jobs website={selectedCompany.website} key={job.id} job={job}></Jobs>)
                 }
             </div>
             <Footer></Footer>

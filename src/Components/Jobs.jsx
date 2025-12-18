@@ -2,8 +2,9 @@ import React from 'react';
 import Requirement from './Requirement';
 import { NavLink } from 'react-router';
 
-const Jobs = ({ job }) => {
-    console.log(job);
+const Jobs = ({ job ,website}) => {
+    // console.log(job);
+    // console.log(website);
 
     return (
         <div>
@@ -32,7 +33,7 @@ const Jobs = ({ job }) => {
                         <img src={job.bannerImage} alt="" />
                     </div>
                     <div className="modal-action flex justify-between">
-                        <NavLink  className='btn'>Apply</NavLink>
+                        <NavLink target='_blank' to={website} className='btn'>Apply</NavLink>
                         <form method="dialog" >
                             <button className="btn">Close</button>
                         </form>
